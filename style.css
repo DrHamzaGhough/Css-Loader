@@ -35,16 +35,24 @@ body{
 }
 .ring:nth-child(2){
     border-right-width: 8px;
-    border-color: rgb(173, 224, 55);
+    border-color: rgb(101, 253, 169);
     animation: rotate2 2s linear infinite;
 
 }
 .ring:nth-child(3){
     border-top-width: 8px;
-    border-color: rgb(245, 76, 180);
+    border-color: rgb(196, 223, 43);
     animation: rotate3 2s linear infinite;
 
 }
+.ring:nth-child(4){
+    border-left-width: 8px;
+    border-color: rgb(245, 76, 180);
+    animation: rotate4 2s linear infinite;
+
+}
+
+
 @keyframes rotate1 {
     0%{
         transform: rotateX(35deg) rotatey(-45deg)  rotatez(0deg);
@@ -69,6 +77,16 @@ body{
     }
     100%{
         transform: rotateX(35deg) rotatey(55deg)  rotatez(360deg);
+
+    }
+    
+}
+@keyframes rotate4 {
+    0%{
+        transform: rotateX(50deg) rotatey(-20deg)  rotatez(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotatey(-20deg)  rotatez(360deg);
 
     }
 }
